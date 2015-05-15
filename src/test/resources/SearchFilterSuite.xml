@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchFilterScenario">
+
+  <test name="PushContent">
+    <parameter name="jsonPath" value="src/test/resources/ContentDataNew.json" />
+    <classes>
+      <class name="com.cs.searchfilter.PushContentTest" />
+    </classes>
+  </test>
+
+  <test name="SearchStratsWith">
+    <classes>
+      <class name="com.cs.searchfilter.SearchContentStartsWith" />
+    </classes>
+  </test>
+  
+  <test name="SearchEndsWith">
+    <classes>
+      <class name="com.cs.searchfilter.SearchContentEndsWith" />
+    </classes>
+  </test>
+  
+  <test name="SearchEquals">
+    <classes>
+      <class name="com.cs.searchfilter.SearchContentEquals" />
+    </classes>
+  </test>
+  
+  <test name="SearchContent">
+    <classes>
+      <class name="com.cs.searchfilter.SearchContentWithContains" />
+    </classes>
+  </test>
+  
+</suite>
