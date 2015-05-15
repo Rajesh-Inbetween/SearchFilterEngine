@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	
+  compile('org.elasticsearch:elasticsearch:1.5.2')
+  
+  testCompile 'org.testng:testng:6.8.21'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
