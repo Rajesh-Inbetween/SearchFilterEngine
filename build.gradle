@@ -8,7 +8,9 @@ repositories {
 
 dependencies {
 	
-  compile('org.elasticsearch:elasticsearch:1.5.2')
+  compile 'org.elasticsearch:elasticsearch:1.5.2'
+  compile 'org.springframework:spring-core:4.1.6.RELEASE'
+  compile 'org.springframework:spring-context:4.1.6.RELEASE'
   
   testCompile 'org.testng:testng:6.8.21'
 }
