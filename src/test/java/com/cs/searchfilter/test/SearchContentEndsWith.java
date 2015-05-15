@@ -1,5 +1,7 @@
 package com.cs.searchfilter.test;
 
-public class SearchContentEndsWith {
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+
+public class SearchContentEndsWith extends AbstractTestNGSpringContextTests {
 
 }

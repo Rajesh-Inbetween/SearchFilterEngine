@@ -1,5 +1,7 @@
 package com.cs.searchfilter.test;
 
-public class PushContentTest {
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+
+public class PushContentTest extends AbstractTestNGSpringContextTests {
 
 }
