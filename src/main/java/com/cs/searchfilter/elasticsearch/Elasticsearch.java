@@ -1,6 +1,7 @@
 package com.cs.searchfilter.elasticsearch;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.node.Node;
@@ -25,6 +26,11 @@ public class Elasticsearch {
   @Bean
   public Client client(){
     return client;
+  }
+  
+  @PreDestroy
+  public void shutdown(){
+    node.stop();
   }
   
   
