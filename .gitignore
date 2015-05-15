@@ -4,4 +4,5 @@
 /.gradle/
 .classpath
 .project
+/data/
 
