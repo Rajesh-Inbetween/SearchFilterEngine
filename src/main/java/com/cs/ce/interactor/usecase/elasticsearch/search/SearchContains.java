@@ -33,7 +33,7 @@ public class SearchContains implements IInteractor {
   public Object execute(Object data)
   {
     try {
-      Map<String, String> searchParameters = (HashMap<String, String>) data;
+      Map<String, String> searchParameters = (Map<String, String>) data;
       
       String fieldName = searchParameters.get("field");
       String fieldValueContains = searchParameters.get("value");
